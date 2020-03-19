@@ -37,14 +37,13 @@ variable "helm_install_jenkins" {
 
 variable "patch_svc_lbr_external_ip" {
   description = "Please input to patch grafana, kubernetes-dashboard service for LBR Ingress External IP (expose)- true or false"
+  default     = false
 }
 
 variable "ssh_public_key" {
-  default = "id_rsa.pub"
 }
 
 variable "admin_username" {
-  default = "aksadmin"
 }
 
 variable "agent_count" {
